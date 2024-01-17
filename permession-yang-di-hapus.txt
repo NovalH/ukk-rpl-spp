@@ -1,0 +1,19 @@
+<?php
+session_start();
+if($_SESSION['level']!='admin'){
+    echo"<script>
+    alert('Maaf Anda bukan sesi admin');
+    window.location.assign('../index2.php');
+    </script>";
+}
+if(empty($_SESSION['id_petugas'])){
+    echo"<script>
+    alert('Maaf Anda Belum Login');
+    window.location.assign('index2.php');
+    </script>";
+}
+?>
+
+
+
+masukkan yang kodingan ke admin
